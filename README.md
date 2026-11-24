@@ -61,4 +61,33 @@ Not from real data. This illustrates how basis is allocated in a spin-off.
 | SpinCo | 25 | $32 | $800 | 14.29% | $714.29 | $28.57 |
 | Total | | | $5,600 | 100% | $5,000.00 | |
 
-Basis is split in proportion to fair market value after
+Basis is split in proportion to fair market value after the spin-off, and the total stays at $5,000. In practice the allocation percentages come from the issuer's published tax guidance, so this is an illustration and not tax advice.
+
+## Limitations
+
+- Yahoo's adjustment behavior is inferred from the data (AAPL check), not from documentation I verified.
+- As-traded prices are reconstructed, not checked against exchange records.
+- Positions are hypothetical.
+- Dividends and other corporate actions (mergers, rights issues) are not covered.
+
+## Run it
+
+```
+pip install pandas yfinance
+python splits.py     # writes splits.csv
+python impact.py     # writes splits_impact.csv
+python basis.py      # writes splits_basis.csv
+```
+
+Open `splits_basis.csv` in Tableau, or view the live dashboard linked above.
+
+## Files
+
+- `splits.py` pulls split events
+- `impact.py` reconstructs as-traded prices and compares moves
+- `basis.py` hypothetical cost basis and consistency check
+- `splits_basis.csv` final output used in the dashboard
+
+## Tools
+
+Python (pandas, yfinance), Tableau Public
