@@ -6,7 +6,7 @@ A small corporate actions analysis showing what a stock split looks like in an u
 
 ## Why I built it
 
-Corporate actions are a common source of pricing and position breaks. A feed that doesn't adjust for a split shows a 75% to 98% "crash" on split day, which can trigger false alerts or distort returns. Cost basis has a related trap: per-share basis changes, but total basis must not. This project makes both visible.
+Corporate actions are a common source of pricing and position breaks. A feed that doesn't adjust for a split shows a 66% to 98% "crash" on split day, which can trigger false alerts or distort returns. Cost basis has a related trap: per-share basis changes, but total basis must not. This project makes both visible.
 
 ## Data
 
